@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suki Japanese Restaurant</title>
+
+    <!-- Estilos y fuentes -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO FIJO -->
+    <header class="head">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div class="logo">
+            <div class="logo-text">
+                <div class="suki">S&nbsp;u&nbsp;k&nbsp;i</div>
+                <div class="japan">J&nbsp;A&nbsp;P&nbsp;A&nbsp;N&nbsp;E&nbsp;S&nbsp;E&nbsp;&nbsp;R&nbsp;E&nbsp;S&nbsp;T&nbsp;A&nbsp;U&nbsp;R&nbsp;A&nbsp;N&nbsp;T</div>
+                <img src="images/logo.png" alt="Logo Suki" class="logo-img">
+            </div>     
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+        <nav class="navbar">
+            <a href="index.html">INICIO</a>
+            <a href="menu.html">MENÚ</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="#">CONÓCENOS</a>
+        </nav>
+    </header>
+
+    <!-- CONTACTOOOOOOOOOO RESERVA -->
+
+    <section class="suki-contact-section">
+    <div class="suki-contact-container">
+        <h2 class="suki-contact-title">Reserva con nosotros</h2>
+        <p class="suki-contact-subtitle">
+        Reserva con Suki y prepárate para disfrutar de una experiencia única, pensada especialmente para ti.
+        </p>
+        <hr class="suki-contact-line" />
+
+        <form class="suki-contact-form">
+        <div class="suki-contact-row">
+            <div class="suki-form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Introduce tu nombre" />
+            </div>
+            <div class="suki-form-group">
+            <label>Correo Electrónico</label>
+            <input type="email" placeholder="Introduce tu correo electrónico" />
+            </div>
+        </div>
+
+        <div class="suki-contact-row">
+            <div class="suki-form-group">
+            <label>Número de personas</label>
+            <input type="text" placeholder="2, 3, 4, 5, 6+" />
+            </div>
+            <div class="suki-form-group">
+            <label>Fecha y Hora</label>
+            <input type="text" placeholder="Selecciona una hora disponible" />
+            </div>
+        </div>
+
+        <div class="suki-form-group suki-full-width">
+            <label>Mensaje</label>
+            <textarea placeholder="Escriba su mensaje"></textarea>
+        </div>
+
+        <button type="submit" class="suki-send-button">ENVIAR</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- INFOOOOO FINAAAAAAL -->
+    <section class="final-section">
+    <div class="overlay"></div>
+
+    <div class="final-container">
+        <!-- Caja izquierda: Horarios -->
+        <div class="info-box horarios">
+        <h2 class="titulo-rojo">Horarios de Atención</h2>
+        <p class="subtitulo">Servicio dentro del restaurante</p>
+        <hr />
+        <div class="horarios-lista">
+            <div class="columna">
+            <p>Lunes a Jueves</p>
+            <p>8:30am - 12:00pm</p>
+            <p>12:00pm - 9:30pm</p>
+            </div>
+            <div class="columna">
+            <p>Viernes y Sábados</p>
+            <p>8:30am - 12:00pm</p>
+            <p>12:00pm - 10:30pm</p>
+            </div>
+        </div>
+        <p class="centrado">Domingos y festivos</p>
+        <p class="centrado">9:30am - 12:00pm</p>
+        <p class="centrado">12:00pm - 8:00pm</p>
+        <hr />
+        <p class="centrado">Teléfono de contacto</p>
+        <p class="centrado">3148238337</p>
+        <hr />
+        <p class="centrado">Domicilios Lunes a Domingo</p>
+        <p class="centrado">10:00am a 9:00pm</p>
+
+        <div class="botones-final">
+            <a href="contacto.html" class="btn-reservar">RESERVAR</a>
+            <button class="btn-domicilio">DOMICILIOS</button>
+        </div>
+    </div>
+
+        <!-- Caja derecha: Ubicación -->
+        <div class="info-box ubicacion">
+        <h2 class="titulo-rojo">Ubicación</h2>
+        <p class="texto-blanco">Riohacha, Calle 1ra. Local 12 - 37</p>
+        <div class="mapa">
+            <img src="images/mapa-placeholder.png" alt="Mapa de ubicación" />
+        </div>
+        <hr />
+        <h3 class="titulo-rojo">Email</h3>
+        <p class="texto-blanco">sukirestaurant@gmail.com</p>
+        </div>
+    </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

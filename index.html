@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suki Japanese Restaurant</title>
+
+    <!-- Estilos y fuentes -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO FIJO -->
+    <header class="head">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div class="logo">
+            <div class="logo-text">
+                <div class="suki">S&nbsp;u&nbsp;k&nbsp;i</div>
+                <div class="japan">J&nbsp;A&nbsp;P&nbsp;A&nbsp;N&nbsp;E&nbsp;S&nbsp;E&nbsp;&nbsp;R&nbsp;E&nbsp;S&nbsp;T&nbsp;A&nbsp;U&nbsp;R&nbsp;A&nbsp;N&nbsp;T</div>
+                <img src="images/logo.png" alt="Logo Suki" class="logo-img">
+            </div>     
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        
+        <nav class="navbar">
+            <a href="index.html">INICIO</a>
+            <a href="menu.html">MENÚ</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="#">CONÓCENOS</a>
+        </nav>
+    </header>
+
+   <!-- PORTADA CON IMAGEN Y TEXTO -->
+    <section class="hero-section">
+    <div class="hero-overlay">
+        <div class="hero-content"> <!-- CONTENEDOR NUEVO -->
+        <h2 class="title">La mejor comida para tu gusto</h2>
+        <p>Descubra una cocina deliciosa y momentos inolvidables en nuestro acogedor paraíso culinario. En Suki, cada visita es un espectáculo para los sentidos. Fusionamos tradición y creatividad para ofrecerte mucho más que una comida: una experiencia.</p>
+        <div class="btn-home">
+            <a href="menu.html" class="menu">MENÚ</a>
+            <a href="contacto.html" class="reserva">RESERVAR</a>
+            <a href="#domicilio" class="domicilio">DOMICILIOS</a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- MENÚ DESTACADO -->
+    <section class="content">
+        <h2 class="tittle">Nuestro menú te ofrece variedad en:</h2>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-bowl-food"></i>
+                <h3>Platillos</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-cookie"></i>
+                <h3>Postres</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-glass-water"></i>
+                <h3>Bebidas</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-mug-saucer"></i>
+                <h3>Desayunos</h3>
+            </div>
+        </div>
+
+        <!-- IMAGENES SCROLL HORIZONTAL CHAVAL -->
+        <div class="scroll-gallery-wrapper">
+        <button class="scroll-btn left" onclick="scrollGallery(-1)">‹</button>
+
+        <div class="carousel-wrapper">
+            <div class="scroll-gallery">
+                <div class="image-track">
+                    <div class="img-box"><img src="images/plato1.jpeg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato2.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato3.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato4.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato5.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato6.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato7.png" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato8.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato9.jpeg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato10.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato11.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato12.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato13.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato14.jpg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato15.jpeg" alt="Plato" /></div>
+                    <div class="img-box"><img src="images/plato16.jpg" alt="Plato" /></div>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollGallery(1)">›</button>
+        </div>
+
+        <div class="btn-menu">
+            <a href="menu.html">EXPLORAR MENÚ</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONÓCENOS -->
+    <section class="about-section">
+        <div class="about-wrapper">
+            
+            <!-- Fondo con imagen y caja negra superpuesta -->
+            <div class="contact-section">
+            <img src="images/fondo-contacto.jpg" alt="Fondo" class="contact-background">
+            <div class="contact-info">
+                <h2 class="title">Ven y visítanos</h2>
+                <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>3148238337</span>
+                </div>
+                <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>sukirestaurant@gmail.com</span>
+                </div>
+                <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Riohacha, Calle 1ra<br>Local 12 - 37<br>Frente al mar</span>
+                </div>
+            </div>
+            </div>
+
+            <!-- Texto de bienestar a la derecha -->
+            <div class="wellness-text">
+            <h2 class="title">Cuidamos tu bienestar a través de una cocina sana y sabrosa, pensada para compartir en familia</h2>
+            <p>Nuestra historia comienza con el deseo de ofrecer una experiencia culinaria diferente: una mezcla de sabores auténticos, atención personalizada y un ambiente que invita a quedarse. Inspirados en la riqueza gastronómica de nuestra región, le damos un giro contemporáneo que conecta con paladares de todo el mundo.</p>
+            <p>En Suki, sabemos que comer va más allá del plato: es un momento para disfrutar, compartir y crear recuerdos. Nuestro equipo, siempre atento y apasionado por lo que hace, está comprometido con brindarte una experiencia cálida, cercana y memorable en cada visita.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN EVENTOS / SERVICIOS ÚNICOS -->
+    <section class="eventos-section">
+    <h2 class="eventos-title">También ofrecemos servicios únicos para tus eventos</h2>
+
+    <div class="scroll-gallery-wrapper-eventos">
+    <button class="scroll-btn-eventos left" onclick="scrollGalleryEventos(-1)">‹</button>
+
+        <div class="carousel-wrapper-eventos">
+            <div class="scroll-gallery-eventos" id="galeria-eventos">
+                <div class="image-track-eventos">
+                    <div class="img-box-evento"><img src="images/evento1.png" alt="Evento 1" /></div>
+                    <div class="img-box-evento"><img src="images/evento2.png" alt="Evento 2" /></div>
+                    <div class="img-box-evento"><img src="images/evento3.png" alt="Evento 3" /></div>
+                    <div class="img-box-evento"><img src="images/evento4.png" alt="Evento 4" /></div>
+                    <div class="img-box-evento"><img src="images/evento5.png" alt="Evento 5" /></div>
+                    <div class="img-box-evento"><img src="images/evento6.png" alt="Evento 6" /></div>
+                </div>
+            </div>
+        </div>
+
+    <button class="scroll-btn-eventos right" onclick="scrollGalleryEventos(1)">›</button>
+    </div>
+
+
+    <div class="btn-menu">
+        <a href="contacto.html" class="btn-contacto">CONTACTANOS</a>
+    </div>
+    </section>
+
+    <!-- SERVICIOOO A DOMICLIOOOOOOOOOO -->
+     <section class="servicio-domicilio-section">
+    <div class="servicio-domicilio-container">
+        
+        <!-- Columna Izquierda: Imágenes -->
+        <div class="imagenes-domicilio">
+        <div class="img-vertical">
+            <img src="images/domi1.jpg" alt="Domicilio vertical">
+        </div>
+        <div class="img-doble">
+            <img class="img-cuadrada" src="images/domi2.jpg" alt="Domicilio cuadrada">
+            <img class="img-pequena" src="images/domi3.jpg" alt="Domicilio pequeña">
+        </div>
+        </div>
+
+        <!-- Columna Derecha: Texto e iconos -->
+        <div class="texto-domicilio">
+        <div class="box-domicilio">
+            <h2 class="titulo-domicilio">El servicio a domicilio más ágil de la ciudad</h2>
+            <p class="descripcion-domicilio">
+            Nos destacamos por ofrecer una atención rápida, eficiente y siempre cordial,
+            para que disfrutes de tu pedido sin demoras y con la mejor calidad.           
+            </p>
+
+            <div class="iconos-domicilio">
+            <div class="icono-item">
+                <div class="icono-circulo"><i class="fas fa-clock"></i></div>
+                <span class="icono-texto">Pedidos en 30 minutos</span>
+            </div>
+            <div class="icono-item">
+                <div class="icono-circulo"><i class="fas fa-receipt"></i></div>
+                <span class="icono-texto">Mejores ofertas y precios</span>
+            </div>
+            <div class="icono-item">
+                <div class="icono-circulo"><i class="fas fa-shopping-cart"></i></div>
+                <span class="icono-texto">Servicios Online Disponibles</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- INFOOOOO FINAAAAAAL -->
+    <section class="final-section">
+    <div class="overlay"></div>
+
+    <div class="final-container">
+        <!-- Caja izquierda: Horarios -->
+        <div class="info-box horarios">
+        <h2 class="titulo-rojo">Horarios de Atención</h2>
+        <p class="subtitulo">Servicio dentro del restaurante</p>
+        <hr />
+        <div class="horarios-lista">
+            <div class="columna">
+            <p>Lunes a Jueves</p>
+            <p>8:30am - 12:00pm</p>
+            <p>12:00pm - 9:30pm</p>
+            </div>
+            <div class="columna">
+            <p>Viernes y Sábados</p>
+            <p>8:30am - 12:00pm</p>
+            <p>12:00pm - 10:30pm</p>
+            </div>
+        </div>
+        <p class="centrado">Domingos y festivos</p>
+        <p class="centrado">9:30am - 12:00pm</p>
+        <p class="centrado">12:00pm - 8:00pm</p>
+        <hr />
+        <p class="centrado">Teléfono de contacto</p>
+        <p class="centrado">3148238337</p>
+        <hr />
+        <p class="centrado">Domicilios Lunes a Domingo</p>
+        <p class="centrado">10:00am a 9:00pm</p>
+
+        <div class="botones-final">
+            <a href="contacto.html" class="btn-reservar">RESERVAR</a>
+            <button class="btn-domicilio">DOMICILIOS</button>
+        </div>
+    </div>
+
+        <!-- Caja derecha: Ubicación -->
+        <div class="info-box ubicacion">
+        <h2 class="titulo-rojo">Ubicación</h2>
+        <p class="texto-blanco">Riohacha, Calle 1ra. Local 12 - 37</p>
+        <div class="mapa">
+            <img src="images/mapa-placeholder.png" alt="Mapa de ubicación" />
+        </div>
+        <hr />
+        <h3 class="titulo-rojo">Email</h3>
+        <p class="texto-blanco">sukirestaurant@gmail.com</p>
+        </div>
+    </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
